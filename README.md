@@ -30,4 +30,9 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 5. **学习并实现 Feed Forward**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
+   - **状态**：未开始
+   - 
+5. **整合并测试**  
+   - **负责人**：zrz  
+   - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始  
