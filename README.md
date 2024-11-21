@@ -3,6 +3,8 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 
 
 # encoder部分
+下列任务ddl：2024-12-01
+
 | **任务描述**                | **负责人** | **计划完成时间** | **状态**   |
 |-----------------------------|------------|------------------|------------|
 | 学习并实现 Input Embedding  | zrz        | YYYY-MM-DD       | 未开始     |
