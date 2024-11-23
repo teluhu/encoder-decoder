@@ -4,7 +4,9 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 
 # encoder部分
 下列任务ddl：2024-12-01
+
 11.23更新：原来Input Embedding和positional_encoding不算在encoder里，因为这两层不参与encoder的前向传播
+
 ### 任务列表
 **学习并实现多头注意力编码**  
    - **负责人**：zrz  
