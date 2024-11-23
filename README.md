@@ -4,36 +4,21 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 
 # encoder部分
 下列任务ddl：2024-12-01
-
+11.23更新：原来Input Embedding和positional_encoding不算在encoder里，因为这两层不参与encoder的前向传播
 ### 任务列表
-
-1. **学习并实现 Input Embedding**  
+**学习并实现多头注意力编码**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始  
 
-2. **学习并实现位置编码**  
+**学习并实现 Add & Norm**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始  
 
-3. **学习并实现多头注意力编码**  
-   - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD  
-   - **状态**：未开始  
-
-4. **学习并实现 Add & Norm**  
-   - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD  
-   - **状态**：未开始  
-
-5. **学习并实现 Feed Forward**  
+**学习并实现 Feed Forward**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始
      
-5. **整合并测试encoder**  
-   - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD  
-   - **状态**：未开始  
 ![5c40047bf06cb2f9603d5ef42921c43](https://github.com/user-attachments/assets/ecd15048-1c42-482b-a9f0-413ba023fdf2)
