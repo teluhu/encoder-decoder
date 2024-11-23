@@ -8,13 +8,14 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 11.23更新：原来Input Embedding和positional_encoding不算在encoder里，因为这两层不参与encoder的前向传播。
 
 ### 任务列表
-**学习并实现Input Embedding**   ✅已完成
+**学习并实现Input Embedding** 
    - **负责人**：zrz  
    - **计划完成时间**：2024.11.23
    - **状态**：
-         
-         学习了Input Embedding实现方法
+         ✅已完成
      
+         学习了Input Embedding实现方法
+
          完成了Input Embedding实现，即调用nn.Embedding函数即可
      
          ⏳ 暂时放在了Transformer的class里
