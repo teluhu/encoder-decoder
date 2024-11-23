@@ -11,7 +11,8 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 **学习并实现多头注意力编码**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD 
-   - **状态**：2024.11.23 15：30 开始学习基础理论
+   - **状态**：
+         2024.11.23 15:30 开始学习基础理论
 
 **学习并实现 Add & Norm**  
    - **负责人**：zrz  
