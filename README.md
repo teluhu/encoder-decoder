@@ -12,6 +12,7 @@ Reproduction of the transformer architecture, like the encoder and decoder.
    - **负责人**：zrz  
    - **计划完成时间**：2024.11.23
    - **状态**：
+     
          <span style="color:blue">已完成</span>
          
          学习了Input Embedding实现方法
