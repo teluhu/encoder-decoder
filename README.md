@@ -22,8 +22,14 @@ Reproduction of the transformer architecture, like the encoder and decoder.
      
 **学习并实现Positional_encoding**  
    - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD 
-   - **状态**：未开始
+   - **计划完成时间**：2024.11.26
+   - **状态**：         ✅已完成
+     
+         学习了Positional Embedding实现方法
+
+         完成了Positional Embedding实现，输入维度是[batch_size, length, dmodel]
+     
+         ⏳ 暂时放在了Transformer的class里
 
 **学习并实现多头注意力编码**  
    - **负责人**：zrz  
@@ -37,6 +43,11 @@ Reproduction of the transformer architecture, like the encoder and decoder.
    - **状态**：未开始  
 
 **学习并实现 Feed Forward**  
+   - **负责人**：zrz  
+   - **计划完成时间**：YYYY-MM-DD  
+   - **状态**：未开始
+     
+**学习并实现 Transformer的mask部分**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始
