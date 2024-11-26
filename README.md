@@ -28,6 +28,8 @@ Reproduction of the transformer architecture, like the encoder and decoder.
          学习了Positional Embedding实现方法
 
          完成了Positional Embedding实现，输入维度是[batch_size, length, dmodel]
+
+         ⚙️ 修改了公式的修改，现在dmodel也可以是奇数了
      
          ⏳ 暂时放在了Transformer的class里
 
