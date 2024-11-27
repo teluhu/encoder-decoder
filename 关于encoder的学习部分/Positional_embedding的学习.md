@@ -1,6 +1,6 @@
 # 位置编码的公式
 
-<img src="C:\Users\16864\AppData\Roaming\Typora\typora-user-images\image-20241126112658932.png" alt="image-20241126112658932" style="zoom: 80%;" />
+![{A3A4481B-4D2C-4C1B-A2B8-C9BF739E55A9}](https://github.com/user-attachments/assets/1c4bb270-e81c-4b4e-893b-e806d7b1ed31)
 
 # 前置知识
 在 PyTorch 中，当你调用一个模块实例时：**output = module(input)**
@@ -37,7 +37,7 @@ ps：因为位置编码是（句子长度的格式，维度），两个部分要
 
 接着是缩放因子，计算如下
 
-<img src="C:\Users\16864\AppData\Roaming\Typora\typora-user-images\image-20241126113657471.png" alt="image-20241126113657471" style="zoom:67%;" />
+![{1A597B9F-C44D-4270-8113-56021EBBFDBF}](https://github.com/user-attachments/assets/0af1c02c-d76f-4753-9b5b-77f10de3a1a7)
 
 然后计算每个pos的位置编码，奇数维度用sin，偶数维度用cos
 
