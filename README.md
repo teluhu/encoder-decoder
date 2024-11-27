@@ -44,7 +44,7 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 
          ⚙️ 把concat里的.contiguous().view改成了.reshape()
      
-         ⏳ 把mask的部分省略了
+         ❗ 把mask的部分省略了
      
          ⏳ 暂时放在了Encoder的class里
 
