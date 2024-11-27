@@ -61,8 +61,16 @@ Reproduction of the transformer architecture, like the encoder and decoder.
      
 **学习并实现 Feed Forward**  
    - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD  
-   - **状态**：未开始
+   - **计划完成时间**：2024.11.27
+   - **状态**：         ✅已完成
+     
+         学习了FeedForward的实现方式
+
+         学习了FeedForward的存在意义
+
+         ⚙️ 把FeedForward里加了dropout层，如果用的话，is_drop传入True即可
+     
+         ⏳ 暂时放在了Encoder的class里
 
 **整合encoder部分**  
    - **负责人**：zrz  
