@@ -35,9 +35,18 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 
 **学习并实现多头注意力编码**  
    - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD 
-   - **状态**：
-         未开始
+   - **计划完成时间**：2024.11.27
+   - **状态**：         ✅已完成
+     
+         学习了多头注意力实现方法
+
+         完成了Positional Embedding实现，输入维度是[batch_size, length, dmodel]，输出维度是[batch_size, length, dmodel]
+
+         ⚙️ 把concat里的.contiguous().view改成了.reshape()
+     
+         ⏳ 把mask的部分省略了
+     
+         ⏳ 暂时放在了Transformer的class里
 
 **学习并实现 Add & Norm**  
    - **负责人**：zrz  
