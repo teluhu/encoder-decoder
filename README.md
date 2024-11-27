@@ -76,6 +76,7 @@ Reproduction of the transformer architecture, like the encoder and decoder.
    - **负责人**：zrz  
    - **计划完成时间**：2024.11.27
    - **状态**：         ✅已完成
+     
          ⏳ 普通地搭起来了
      
 ![5c40047bf06cb2f9603d5ef42921c43](https://github.com/user-attachments/assets/ecd15048-1c42-482b-a9f0-413ba023fdf2)
