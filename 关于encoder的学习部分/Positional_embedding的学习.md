@@ -39,8 +39,9 @@ ps：因为位置编码是（句子长度的格式，维度），两个部分要
 
 <img src="C:\Users\16864\AppData\Roaming\Typora\typora-user-images\image-20241126113657471.png" alt="image-20241126113657471" style="zoom:67%;" />
 
-最后计算每个pos的位置编码，奇数维度用sin，偶数维度用cos
+然后计算每个pos的位置编码，奇数维度用sin，偶数维度用cos
 
+最后注册pe，注册后，pe 成为 self 对象的一个属性，可以通过 self.pe 访问。pe 不会出现在 model.parameters() 中（即不会被优化）。但它会包含在 model.state_dict() 中，因此可以随模型一起保存和加载。
 
 
 ## `forward`部分
