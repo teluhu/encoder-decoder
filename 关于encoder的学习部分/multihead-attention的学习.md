@@ -138,7 +138,8 @@ tensor([[[[ 1,  2,  3,  4],
 
 然后开始相乘attention，K转置，实现公式
 
-![image-20241126214534453](C:\Users\16864\AppData\Roaming\Typora\typora-user-images\image-20241126214534453.png)
+![Uploading {DB0C45E8-7053-473C-AD70-CE60326A1C9B}.png…]()
+
 
 最后要把之前分出来的头在合回去，过程是把(batch_size, self.num_heads, seq_length, self.d_k)转为(batch_size, seq_length, self.num_heads,  self.d_k)，然后再变为(batch_size, seq_length, self.d_model)
 
