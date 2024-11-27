@@ -46,13 +46,19 @@ Reproduction of the transformer architecture, like the encoder and decoder.
      
          ⏳ 把mask的部分省略了
      
-         ⏳ 暂时放在了Transformer的class里
+         ⏳ 暂时放在了Encoder的class里
 
 **学习并实现 Add & Norm**  
    - **负责人**：zrz  
-   - **计划完成时间**：YYYY-MM-DD  
-   - **状态**：未开始  
+   - **计划完成时间**：2024.11.27
+   - **状态**：         ✅已完成
+     
+         学习了LayerNorm的实现方式
 
+         区别了BatchNorm1d和LayerNorm的区别
+     
+         ⏳ 暂时放在了Encoder的class里
+     
 **学习并实现 Feed Forward**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
