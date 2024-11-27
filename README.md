@@ -79,5 +79,48 @@ Reproduction of the transformer architecture, like the encoder and decoder.
      
          普通地搭起来了
          ⏳不过参考的博客在attn后加了dropout；我在前馈神经网络中已经加了dropout，就不再加了，看看效果 
+
+# decoder部分
+
+### 任务列表
+**学习并实现outputs Embedding** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**学习并实现positional encoding** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**学习并实现masked multi-head attention** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**学习并实现add & norm** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**实现multi-head attention并整合encoder** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**学习并实现feed forward** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**学习并实现linear + softmax** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
+### 任务列表
+**decoder** 
+   - **负责人**：hjy 
+   - **计划完成时间**：xxx
+   - **状态**：未完成
      
 ![5c40047bf06cb2f9603d5ef42921c43](https://github.com/user-attachments/assets/ecd15048-1c42-482b-a9f0-413ba023fdf2)
