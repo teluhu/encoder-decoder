@@ -63,13 +63,13 @@ Reproduction of the transformer architecture, like the encoder and decoder.
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始
-     
-**学习并实现 Transformer的mask部分**  
+
+**整合encoder部分**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始
 
-**整合encoder部分**  
+**学习并实现 Transformer的mask部分**  
    - **负责人**：zrz  
    - **计划完成时间**：YYYY-MM-DD  
    - **状态**：未开始
