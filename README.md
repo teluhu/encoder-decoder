@@ -87,37 +87,30 @@ Reproduction of the transformer architecture, like the encoder and decoder.
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **学习并实现positional encoding** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **学习并实现masked multi-head attention** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **学习并实现add & norm** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **实现multi-head attention并整合encoder** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **学习并实现feed forward** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **学习并实现linear + softmax** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
    - **状态**：未完成
-### 任务列表
 **decoder** 
    - **负责人**：hjy 
    - **计划完成时间**：xxx
