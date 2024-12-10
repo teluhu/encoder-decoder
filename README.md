@@ -83,51 +83,21 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 # decoder部分
 
 ### 任务列表
-**学习并实现outputs Embedding** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
+**学习并实现 decoder** 
+   - **负责人**：hjy
+   - **状态**：已完成
+   - **任务完成内容**：output embedding, pos emb, multi-head attn, ffn, add & norm, softmax & output
+
+
+**调试 decoder** 
+   - **负责人**：hjy
+   - **状态**：已完成
+   - **完成内容**：搭建 Transformer 类，整合 decoder，调试成功关于 decoder 的 forward 
+
+
+**整合 Transformer** 
+   - **负责人**：hjy
    - **状态**：未完成
 
-
-**学习并实现positional encoding** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
-
-
-**学习并实现masked multi-head attention** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
-
-
-**学习并实现add & norm** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
-
-
-**实现multi-head attention并整合encoder** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
-
-
-**学习并实现feed forward** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
-
-
-**学习并实现linear + softmax** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
-
-
-**整合测试decoder** 
-   - **负责人**：hjy 
-   - **计划完成时间**：xxx
-   - **状态**：未完成
      
 ![5c40047bf06cb2f9603d5ef42921c43](https://github.com/user-attachments/assets/ecd15048-1c42-482b-a9f0-413ba023fdf2)
