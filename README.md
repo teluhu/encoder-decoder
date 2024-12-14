@@ -100,5 +100,10 @@ Reproduction of the transformer architecture, like the encoder and decoder.
    - **状态**：已完成
    - **完成内容**：在 Transformer 的类中调用 zrz 编写的 EncoderLayer 类作为 decoder 输入
 
+### PLUS
+可以继续往后做的： 
+1. 训练 trans（model 中的设置 train 函数）
+2. 推理 trans（model 中设置 generate 函数）
+
      
 ![5c40047bf06cb2f9603d5ef42921c43](https://github.com/user-attachments/assets/ecd15048-1c42-482b-a9f0-413ba023fdf2)
