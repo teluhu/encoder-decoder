@@ -98,7 +98,12 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 **整合 Transformer** 
    - **负责人**：hjy
    - **状态**：已完成
-   - **完成内容**：在 Transformer 的类中调用 zrz 编写的 EncoderLayer 类作为 decoder 输入
+   - **完成内容**：在 Transformer 的类中调用 zrz 编写的 EncoderLayer 类作为 decoder 输入，完成一轮的 enc-dec
+   - 
+**加入解码** 
+   - **负责人**：hjy
+   - **状态**：已完成
+   - **完成内容**：完成一轮 enc-dec 后生成内容解码为字符
 
 ### PLUS
 可以继续往后做的： 

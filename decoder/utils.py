@@ -34,17 +34,17 @@ class MultiHeadAttention(nn.Module):
         q = self.q_linear(q)  # (batch_size, seq_len_q, hidden_size)  对 emb 的值或者维度做了改变
         k = self.k_linear(k)  # (batch_size, seq_len_k, hidden_size)
         v = self.v_linear(v)  # (batch_size, seq_len_v, hidden_size)
-        print(f"q.size: {q.size()}")
-        print(f"k.size: {k.size()}")
-        print(f"v.size: {v.size()}")
+        # print(f"q.size: {q.size()}")
+        # print(f"k.size: {k.size()}")
+        # print(f"v.size: {v.size()}")
 
         # 分割头
         q = self.split_head(q, batch_size)  # (batch_size, num_heads, seq_len_q, head_dim)
         k = self.split_head(k, batch_size)  # (batch_size, num_heads, seq_len_k, head_dim)
         v = self.split_head(v, batch_size)  # (batch_size, num_heads, seq_len_v, head_dim)
-        print(f"new_q.size: {q.size()}")
-        print(f"new_k.size: {k.size()}")
-        print(f"new_v.size: {v.size()}")
+        # print(f"new_q.size: {q.size()}")
+        # print(f"new_k.size: {k.size()}")
+        # print(f"new_v.size: {v.size()}")
 
         # 每头独立计算
         ## 多头计算注意力分数 QK^T

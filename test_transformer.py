@@ -18,6 +18,7 @@ def simple_test_transformer_model():
         truncation_side='right',  # 设置分词器的截断侧
         padding_side='right'  # 设置分词器的填充侧
     )
+
     # 参数设置
     vocab_size = tokenizer.vocab_size
     d_model = 1536
@@ -67,6 +68,16 @@ def simple_test_transformer_model():
     # 第一个参数是decoder的input。第二个参数不重要。第三个参数是防止padding参与运算，第四个参数是自回归掩码
     output, attn_weights = model(src_input_ids, src_input_ids, src_mask, tgt_mask)
     print("Forward pass output shape:", output.size())  # 应为 (batch_size, seq_length, vocab_size)
+
+    # 获取预测的token索引
+    predicted_token_ids = torch.argmax(output, dim=-1)  # [batch_size, seq_length]     # 贪婪解码
+
+    # 解码成文本
+    decoded_texts = tokenizer.batch_decode(predicted_token_ids, skip_special_tokens=True)
+
+    for i in range(len(source_texts)):
+        print(f"source texts{i + 1}: {source_texts[i]} \ndecoded texts{i + 1}: {decoded_texts[i]}")
+
 
 
 # 运行测试函数
