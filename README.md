@@ -86,7 +86,7 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 **学习并实现 decoder** 
    - **负责人**：hjy
    - **状态**：已完成
-   - **任务完成内容**：output embedding, pos emb, multi-head attn, ffn, add & norm, softmax & output
+   - **任务完成内容**：tokenizer, output embedding, pos emb, multi-head attn, ffn, add & norm, softmax & output
 
 
 **调试 decoder** 
@@ -97,7 +97,8 @@ Reproduction of the transformer architecture, like the encoder and decoder.
 
 **整合 Transformer** 
    - **负责人**：hjy
-   - **状态**：未完成
+   - **状态**：已完成
+   - **完成内容**：在 Transformer 的类中调用 zrz 编写的 EncoderLayer 类作为 decoder 输入
 
      
 ![5c40047bf06cb2f9603d5ef42921c43](https://github.com/user-attachments/assets/ecd15048-1c42-482b-a9f0-413ba023fdf2)
