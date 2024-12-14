@@ -20,18 +20,21 @@ def simple_test_transformer_model():
     # 参数设置
     vocab_size = tokenizer.vocab_size
     d_model = 1536
-    nheads = 8
+    num_heads = 8
     num_decoder_layers = 2
     dim_feedforward = 256
     max_seq_length = 5
     dropout = 0.1
     batch_size = 2
 
+
+
+
     # 初始化模型
     model = TransformerModel(
         vocab_size=vocab_size,
         d_model=d_model,
-        nhead=nheads,
+        num_heads=num_heads,
         num_decoder_layers=num_decoder_layers,
         dim_feedforward=dim_feedforward,
         max_seq_length=max_seq_length,
@@ -56,7 +59,7 @@ def simple_test_transformer_model():
 
     ## padding mask 不看padding
     src_mask = src_attention_mask.unsqueeze(1).unsqueeze(2)  # [batch_size, 1, 1, seq_len]
-    src_mask = src_mask.expand(-1, nheads, -1, -1)  # [batch_size, num_heads, 1, seq_len]
+    src_mask = src_mask.expand(-1, num_heads, -1, -1)  # [batch_size, num_heads, 1, seq_len]
     #
     # print(f"src_input_ids:{src_input_ids}")
     # print(f"src_input_ids_size: {src_input_ids.size()}")

@@ -1,12 +1,14 @@
 # transformer_decoder/model.py
+from encoder.Encoder import EncoderLayer
 from decoder.decoder import Decoder
 from transformers import AutoTokenizer
 import torch
 import torch.nn as nn
+import math
 
 
 class TransformerModel(nn.Module):
-    def __init__(self, vocab_size, d_model, nhead, num_decoder_layers, dim_feedforward, max_seq_length, dropout=0.1):
+    def __init__(self, vocab_size, d_model, num_heads, num_decoder_layers, dim_feedforward, max_seq_length, dropout=0.1):
         super(TransformerModel, self).__init__()
 
         # 加载分词器
@@ -16,16 +18,23 @@ class TransformerModel(nn.Module):
             truncation_side='right',
             padding_side='right'
         )
+        # emb
+        self.embedding = nn.Embedding(vocab_size, d_model)
+
+        # 编码器
+        self.encoder = EncoderLayer(d_model, num_heads, dim_feedforward, dropout)
         # 解码器层
-        self.decoder = Decoder(num_decoder_layers, d_model, nhead, dim_feedforward, dropout, vocab_size, max_seq_length)
+        self.decoder = Decoder(num_decoder_layers, d_model, num_heads, dim_feedforward, dropout, vocab_size, max_seq_length)
 
     def forward(self, src_input_ids, encoder_outputs, src_mask, tgt_mask):
 
         # 模拟编码器输出（随机初始化） !!!!!!!!!!!!!!!!!!!!
-        encoder_outputs = torch.randn(src_input_ids.size(0), src_input_ids.size(1), 1536)  # [batch_size, seq_len_src, d_model]
+        # encoder_outputs = torch.randn(src_input_ids.size(0), src_input_ids.size(1), 1536)  # [batch_size, seq_len_src, d_model]
+        # 编码器的输入2：调用编码器，调用的编码器的输入是 [batch_size, seq_len, d_model]
+        x = self.embedding(src_input_ids) * math.sqrt(self.embedding.embedding_dim)
 
-        # 初始化模型
-        # encoder = Encoder(num_layers, d_model, num_heads, d_ff, dropout)  # 假设有 Encoder 类
+        encoder_outputs = self.encoder(x)
+
         output, attn_weights = self.decoder(src_input_ids, encoder_outputs, src_mask, tgt_mask)
 
         return output, attn_weights
