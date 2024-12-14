@@ -23,14 +23,12 @@ class DecoderLayer(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x, enc_output, src_mask, tgt_mask):
-        # 将输入索引转换为嵌入向量，并调整尺度
 
         # 自注意力：输入为解码器自身的输入（x），q,k,v全部都是x
         attn_output, block1 = self.self_attn(x, x, x, tgt_mask)  # [bs, seq_len, emb] [bs, 1, seq_len, seq_len]
         x = self.norm1(x + self.dropout(attn_output))  # 残差连接和 LayerNorm
 
         # 交叉注意力：输入为编码器输出（enc_output）和解码器输入（x）
-        # q：decoder's output. k + v: encoder's output
         attn_output, block2 = self.cross_attn(x, enc_output, enc_output, src_mask)
         x = self.norm2(x + self.dropout(attn_output))  # 残差连接和 LayerNorm
 
@@ -74,8 +72,6 @@ class Decoder(nn.Module):
         x = self.pos_encoding(x)
         x = self.dropout(x)
 
-        ## final output 用来进行输出， 输出和attention weight 是不一样的
-        ## block1 和 block2 是自注意力和交叉注意力 的参数，所以是不是模型内部的参数指的就是 block1 和 block2 的参数
         ## 遍历 self.dec_layers 列表中的每一层
         for i, dec_layer in enumerate(self.dec_layers):
             x, block1, block2 = dec_layer(x, enc_output, src_mask,

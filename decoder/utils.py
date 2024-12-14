@@ -61,7 +61,6 @@ class MultiHeadAttention(nn.Module):
         output = torch.matmul(attention_weights, v)  # (batch_size, num_heads, seq_len_q, head_dim)
 
         # 合并头
-        ######## 多头是如何实现的？？？？
         output = output.transpose(1, 2).contiguous().view(batch_size, -1,
                                                           self.num_heads * self.head_dim)  # (batch_size, seq_len_q, hidden_size)
         # (batch_size, num_heads, seq_len, head_dim) 变化 transpose(1, 2)

@@ -30,7 +30,8 @@ class TransformerModel(nn.Module):
 
         # 模拟编码器输出（随机初始化） !!!!!!!!!!!!!!!!!!!!
         # encoder_outputs = torch.randn(src_input_ids.size(0), src_input_ids.size(1), 1536)  # [batch_size, seq_len_src, d_model]
-        # 编码器的输入2：调用编码器，调用的编码器的输入是 [batch_size, seq_len, d_model]
+
+        # 编码器的输入2：调用编码器函数，输入是 [batch_size, seq_len, d_model]
         x = self.embedding(src_input_ids) * math.sqrt(self.embedding.embedding_dim)
 
         encoder_outputs = self.encoder(x)
@@ -39,6 +40,7 @@ class TransformerModel(nn.Module):
 
         return output, attn_weights
 
+    # 暂时还没有用到
     def generate(self, start_token, max_len, src_input_ids, src_mask, tgt_mask):
         with torch.no_grad():
             # 确保 start_token 是整数类型，并初始化生成序列

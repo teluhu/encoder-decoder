@@ -43,6 +43,4 @@
 batch_size != 1 的文本序列完成 decoder 的整个过程。
 
 ## 待完成
-推理比现在多加入什么，推理的batch_size应该是为1
-训练比现在多加入什么，训练的batch_size应该大于等于1
-加入encoder部分的代码
+加入encoder部分的代码（已完成）
