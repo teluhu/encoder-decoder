@@ -1,0 +1,26 @@
+#####data process start######
+#####data process over######
+Train Labels Distribution: 0 -> 12500 (50.00%), 1 -> 12500 (50.00%)
+#####training strart######
+Epoch [1/10], Loss: 0.6647
+Model saved after epoch 1 to ./transformer_model/
+Epoch [2/10], Loss: 0.4908
+Model saved after epoch 2 to ./transformer_model/
+Epoch [3/10], Loss: 0.6501
+Model saved after epoch 3 to ./transformer_model/
+Epoch [4/10], Loss: 0.4350
+Model saved after epoch 4 to ./transformer_model/
+Epoch [5/10], Loss: 0.3319
+Model saved after epoch 5 to ./transformer_model/
+Epoch [6/10], Loss: 0.2152
+Model saved after epoch 6 to ./transformer_model/
+Epoch [7/10], Loss: 0.2572
+Model saved after epoch 7 to ./transformer_model/
+Epoch [8/10], Loss: 0.2711
+Model saved after epoch 8 to ./transformer_model/
+Epoch [9/10], Loss: 0.1694
+Model saved after epoch 9 to ./transformer_model/
+Epoch [10/10], Loss: 0.3017
+Model saved after epoch 10 to ./transformer_model/
+#####evaluation start######
+Test Accuracy: 0.7813
