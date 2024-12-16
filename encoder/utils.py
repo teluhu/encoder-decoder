@@ -17,7 +17,7 @@ class PositionalEncoding(nn.Module):#维度是奇数也不会报错
     def forward(self, x):#这里的x是[batch_size, seq_length, d_model]
         return x + self.pe[:, :x.size(1)]#也可以尝试下除了相加的方式，但是感觉乘法的话就会有权重为0的可能性
     
-class MultiHeadAttention(nn.Module):#x是[batch_size, seq_length, d_model]
+class MultiHeadAttention(nn.Module):#x是[batch_size, seq_length, d_model]### 注意！这里的MultiHeadAttention不是完全体，因为没有加上mask！
     def __init__(self, d_model, num_heads):
         super().__init__()#继承父类nn.Module
         self.d_model = d_model
@@ -56,17 +56,13 @@ class MultiHeadAttention(nn.Module):#x是[batch_size, seq_length, d_model]
         output= self.Ow(self.concat_heads(attn_output))
         return output
         
-class FeedForward(nn.Module):# 感觉前馈层能做很多，加上dropout吧
-    def __init__(self, d_model,d_hidden,is_drop = True, drop = 0.1):
-        super().__init__()#继承父类nn.Module
+class PositionWiseFeedForward(nn.Module): #之前想过在这里加上dropout，但是效果一般，所以这里改正常了
+    def __init__(self, d_model,d_hidden):
+        super().__init__()
         self.W1 = nn.Linear(d_model, d_hidden)
         self.W2 = nn.Linear(d_hidden, d_model)
         self.relu = nn.ReLU()
-        self.dropout = nn.Dropout(drop)
-        self.is_drop=is_drop
-    
-    def forward(self, x,):
+
+    def forward(self, x):
         x = self.relu(self.W1(x))
-        if self.is_drop:
-            x=self.dropout(x)
         return self.W2(x)
