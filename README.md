@@ -1,5 +1,5 @@
 # encoder-decoder
-Reproduction of the transformer architecture, like the encoder and decoder. 
+Replication of the transformer's encoder and decoder. 
 
 
 # encoder部分
