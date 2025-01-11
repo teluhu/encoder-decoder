@@ -105,7 +105,7 @@ Replication of the transformer's encoder and decoder.
    - **状态**：已完成
    - **完成内容**：完成一轮 enc-dec 后生成内容解码为字符
 
-# 用搭好的transformer实现简单的情感分类任务
+# 用搭好的transformer实现简单情感分类任务
 数据集：imdb
 代码：transformer文本分类，执行的代码运行transformer文本分类/分类.py即可
 正确率为：0.78
